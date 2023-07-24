@@ -2,21 +2,21 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app.kubernetes.io/name: spring-petclinic
-  name: spring-petclinic
+    app.kubernetes.io/name: spring-baby
+  name: spring-baby
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app.kubernetes.io/name: spring-petclinic
+      app.kubernetes.io/name: spring-baby
   template:
     metadata:
       labels:
-        app.kubernetes.io/name: spring-petclinic
-        app.kubernetes.io/part-of: spring-petclinic
+        app.kubernetes.io/name: spring-baby
+        app.kubernetes.io/part-of: spring-baby
     spec:
       containers:
-      - image: spring-petclinic:latest
+      - image: spring-baby:latest
         imagePullPolicy: IfNotPresent
         livenessProbe:
           httpGet:

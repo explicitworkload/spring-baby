@@ -5,6 +5,7 @@ accelerator:
   tags:
   - java
   - spring
+  - springboot
   - tanzu
   - cloud-foundry
 
@@ -32,14 +33,14 @@ engine:
       chain:
       - type: ReplaceText
         substitutions:
-        - text: spring-petclinic
+        - text: spring-baby
           with: "#artifactId.toLowerCase()"
     - include: [ "kubernetes/k8s/deployment.yaml", "kubernetes/k8s/service.yaml" ]
       condition: "#deploymentType == 'k8s-simple'"
       chain:
       - type: ReplaceText
         substitutions:
-        - text: spring-petclinic
+        - text: spring-baby
           with: "#artifactId.toLowerCase()"
       - type: RewritePath
         rewriteTo: "'kubernetes/' + #filename"
@@ -48,7 +49,7 @@ engine:
       chain:
       - type: ReplaceText
         substitutions:
-        - text: spring-petclinic
+        - text: spring-baby
           with: "#artifactId.toLowerCase()"
       - type: RewritePath
         rewriteTo: "#filename"
@@ -57,7 +58,7 @@ engine:
       chain:
       - type: ReplaceText
         substitutions:
-        - text: ": spring-petclinic"
+        - text: ": spring-baby"
           with: "': ' + #artifactId.toLowerCase()"
       - type: RewritePath
         rewriteTo: "'config/' + #filename"
@@ -66,14 +67,14 @@ engine:
       chain:
       - type: ReplaceText
         substitutions:
-        - text: spring-petclinic
+        - text: spring-baby
           with: "#artifactId.toLowerCase()"
     - include: [ "cloudfoundry/manifest.yml" ]
       condition: "#deploymentType == 'manifest'"
       chain:
       - type: ReplaceText
         substitutions:
-        - text: ": spring-petclinic"
+        - text: ": spring-baby"
           with: "': ' + #artifactId.toLowerCase()"
       - type: RewritePath
         rewriteTo: "'config/' + #filename"
@@ -90,7 +91,7 @@ engine:
             with: |-
               '## Running petclinic locally
               
-              > *Note:* The beginning of this `readme.md` file is from the [original Spring PetClinic](https://github.com/spring-projects/spring-petclinic.git) sample app.              
+              > *Note:* The beginning of this `readme.md` file is from the [original Spring PetClinic](https://github.com/spring-projects/spring-baby.git) sample app.              
               > To see how to deploy this Accelerator Sample version of Spring PetClinic, go to [Deploying to Kubernetes](#deploying-to-kubernetes)
               '
         - type: ReplaceText
@@ -100,7 +101,7 @@ engine:
             with: |-
               '## Running petclinic locally
               
-              > *Note:* The beginning of this `readme.md` file is from the [original Spring PetClinic](https://github.com/spring-projects/spring-petclinic.git) sample app.              
+              > *Note:* The beginning of this `readme.md` file is from the [original Spring PetClinic](https://github.com/spring-projects/spring-baby.git) sample app.              
               > To see how to deploy this Accelerator Sample version of Spring PetClinic, go to [Deploying to Cloud Foundry](#deploying-to-cloud-foundry)
               '
       - include: [ "kubernetes/k8s/DEPLOYING.md" ]
@@ -108,7 +109,7 @@ engine:
         chain:
         - type: ReplaceText
           substitutions:
-          - text: spring-petclinic
+          - text: spring-baby
             with: "#artifactId.toLowerCase()"
         - type: RewritePath
           rewriteTo: "'readme.md'"
@@ -117,7 +118,7 @@ engine:
         chain:
         - type: ReplaceText
           substitutions:
-          - text: spring-petclinic
+          - text: spring-baby
             with: "#artifactId.toLowerCase()"
         - type: RewritePath
           rewriteTo: "'readme.md'"
@@ -126,7 +127,7 @@ engine:
         chain:
         - type: ReplaceText
           substitutions:
-          - text: spring-petclinic
+          - text: spring-baby
             with: "#artifactId.toLowerCase()"
         - type: RewritePath
           rewriteTo: "'readme.md'"

@@ -15,9 +15,9 @@ tanzu apps workload apply -f config/workload.yaml
 If you would like deploy the code from tyour local working directory you can use the following command:
 
 ```
-tanzu apps workload create spring-petclinic -f config/workload.yaml \
+tanzu apps workload create spring-baby -f config/workload.yaml \
   --local-path . \
-  --source-image <REPOSITORY-PREFIX>/spring-petclinic-source \
+  --source-image <REPOSITORY-PREFIX>/spring-baby-source \
   --type web
 ```
 
@@ -26,7 +26,7 @@ tanzu apps workload create spring-petclinic -f config/workload.yaml \
 Determine the URL to use for the accessing the app by running:
 
 ```
-tanzu apps workload get spring-petclinic
+tanzu apps workload get spring-baby
 ```
 
 To access the deployed app use the URL shown under "Workload Knative Services".

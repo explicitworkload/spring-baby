@@ -1,15 +1,15 @@
-# Spring PetClinic Sample Application [![Build Status](https://github.com/spring-projects/spring-petclinic/actions/workflows/maven-build.yml/badge.svg)](https://github.com/spring-projects/spring-petclinic/actions/workflows/maven-build.yml)
+# Spring PetClinic Sample Application [![Build Status](https://github.com/spring-projects/spring-baby/actions/workflows/maven-build.yml/badge.svg)](https://github.com/spring-projects/spring-baby/actions/workflows/maven-build.yml)
 
 ## Understanding the Spring Petclinic application with a few diagrams
-<a href="https://speakerdeck.com/michaelisvy/spring-petclinic-sample-application">See the presentation here</a>
+<a href="https://speakerdeck.com/michaelisvy/spring-baby-sample-application">See the presentation here</a>
 
 ## Running petclinic locally
 Petclinic is a [Spring Boot](https://spring.io/guides/gs/spring-boot) application built using [Maven](https://spring.io/guides/gs/maven/). You can build a jar file and run it from the command line (it should work just as well with Java 11 or newer):
 
 
 ```
-git clone https://github.com/spring-projects/spring-petclinic.git
-cd spring-petclinic
+git clone https://github.com/spring-projects/spring-baby.git
+cd spring-baby
 ./mvnw package
 java -jar target/*.jar
 ```
@@ -37,7 +37,7 @@ There is no `Dockerfile` in this project. You can build a container image (if yo
 ```
 
 ## In case you find a bug/suggested improvement for Spring Petclinic
-Our issue tracker is available here: https://github.com/spring-projects/spring-petclinic/issues
+Our issue tracker is available here: https://github.com/spring-projects/spring-baby/issues
 
 
 ## Database configuration
@@ -60,8 +60,8 @@ or
 docker run -e POSTGRES_USER=petclinic -e POSTGRES_PASSWORD=petclinic -e POSTGRES_DB=petclinic -p 5432:5432 postgres:14.1
 ```
 
-Further documentation is provided for [MySQL](https://github.com/spring-projects/spring-petclinic/blob/main/src/main/resources/db/mysql/petclinic_db_setup_mysql.txt)
-and for [PostgreSQL](https://github.com/spring-projects/spring-petclinic/blob/main/src/main/resources/db/postgres/petclinic_db_setup_postgres.txt).
+Further documentation is provided for [MySQL](https://github.com/spring-projects/spring-baby/blob/main/src/main/resources/db/mysql/petclinic_db_setup_mysql.txt)
+and for [PostgreSQL](https://github.com/spring-projects/spring-baby/blob/main/src/main/resources/db/postgres/petclinic_db_setup_postgres.txt).
 
 ## Compiling the CSS
 
@@ -84,7 +84,7 @@ The following items should be installed in your system:
 
 1) On the command line
     ```
-    git clone https://github.com/spring-projects/spring-petclinic.git
+    git clone https://github.com/spring-projects/spring-baby.git
     ```
 2) Inside Eclipse or STS
     ```
@@ -96,7 +96,7 @@ The following items should be installed in your system:
 3) Inside IntelliJ IDEA
     In the main menu, choose `File -> Open` and select the Petclinic [pom.xml](pom.xml). Click on the `Open` button.
 
-    CSS files are generated from the Maven build. You can either build them on the command line `./mvnw generate-resources` or right click on the `spring-petclinic` project then `Maven -> Generates sources and Update Folders`.
+    CSS files are generated from the Maven build. You can either build them on the command line `./mvnw generate-resources` or right click on the `spring-baby` project then `Maven -> Generates sources and Update Folders`.
 
     A run configuration named `PetClinicApplication` should have been created for you if you're using a recent Ultimate version. Otherwise, run the application by right clicking on the `PetClinicApplication` main class and choosing `Run 'PetClinicApplication'`.
 
@@ -109,16 +109,16 @@ The following items should be installed in your system:
 
 |Spring Boot Configuration | Class or Java property files  |
 |--------------------------|---|
-|The Main Class | [PetClinicApplication](https://github.com/spring-projects/spring-petclinic/blob/main/src/main/java/org/springframework/samples/petclinic/PetClinicApplication.java) |
-|Properties Files | [application.properties](https://github.com/spring-projects/spring-petclinic/blob/main/src/main/resources) |
-|Caching | [CacheConfiguration](https://github.com/spring-projects/spring-petclinic/blob/main/src/main/java/org/springframework/samples/petclinic/system/CacheConfiguration.java) |
+|The Main Class | [PetClinicApplication](https://github.com/spring-projects/spring-baby/blob/main/src/main/java/org/springframework/samples/petclinic/PetClinicApplication.java) |
+|Properties Files | [application.properties](https://github.com/spring-projects/spring-baby/blob/main/src/main/resources) |
+|Caching | [CacheConfiguration](https://github.com/spring-projects/spring-baby/blob/main/src/main/java/org/springframework/samples/petclinic/system/CacheConfiguration.java) |
 
 ## Interesting Spring Petclinic branches and forks
 
-The Spring Petclinic "main" branch in the [spring-projects](https://github.com/spring-projects/spring-petclinic)
+The Spring Petclinic "main" branch in the [spring-projects](https://github.com/spring-projects/spring-baby)
 GitHub org is the "canonical" implementation, currently based on Spring Boot and Thymeleaf. There are
-[quite a few forks](https://spring-petclinic.github.io/docs/forks.html) in a special GitHub org
-[spring-petclinic](https://github.com/spring-petclinic). If you have a special interest in a different technology stack
+[quite a few forks](https://spring-baby.github.io/docs/forks.html) in a special GitHub org
+[spring-baby](https://github.com/spring-baby). If you have a special interest in a different technology stack
 that could be used to implement the Pet Clinic then please join the community there.
 
 
@@ -136,7 +136,7 @@ Here is a list of them:
 
 # Contributing
 
-The [issue tracker](https://github.com/spring-projects/spring-petclinic/issues) is the preferred channel for bug reports, features requests and submitting pull requests.
+The [issue tracker](https://github.com/spring-projects/spring-baby/issues) is the preferred channel for bug reports, features requests and submitting pull requests.
 
 For pull requests, editor preferences are available in the [editor config](.editorconfig) for easy use in common text editors. Read more and download plugins at <https://editorconfig.org>. If you have not previously done so, please fill out and submit the [Contributor License Agreement](https://cla.pivotal.io/sign/spring).
 
@@ -144,13 +144,13 @@ For pull requests, editor preferences are available in the [editor config](.edit
 
 The Spring PetClinic sample application is released under version 2.0 of the [Apache License](https://www.apache.org/licenses/LICENSE-2.0).
 
-[spring-petclinic]: https://github.com/spring-projects/spring-petclinic
-[spring-framework-petclinic]: https://github.com/spring-petclinic/spring-framework-petclinic
-[spring-petclinic-angularjs]: https://github.com/spring-petclinic/spring-petclinic-angularjs 
-[javaconfig branch]: https://github.com/spring-petclinic/spring-framework-petclinic/tree/javaconfig
-[spring-petclinic-angular]: https://github.com/spring-petclinic/spring-petclinic-angular
-[spring-petclinic-microservices]: https://github.com/spring-petclinic/spring-petclinic-microservices
-[spring-petclinic-reactjs]: https://github.com/spring-petclinic/spring-petclinic-reactjs
-[spring-petclinic-graphql]: https://github.com/spring-petclinic/spring-petclinic-graphql
-[spring-petclinic-kotlin]: https://github.com/spring-petclinic/spring-petclinic-kotlin
-[spring-petclinic-rest]: https://github.com/spring-petclinic/spring-petclinic-rest
+[spring-baby]: https://github.com/spring-projects/spring-baby
+[spring-framework-petclinic]: https://github.com/spring-baby/spring-framework-petclinic
+[spring-baby-angularjs]: https://github.com/spring-baby/spring-baby-angularjs 
+[javaconfig branch]: https://github.com/spring-baby/spring-framework-petclinic/tree/javaconfig
+[spring-baby-angular]: https://github.com/spring-baby/spring-baby-angular
+[spring-baby-microservices]: https://github.com/spring-baby/spring-baby-microservices
+[spring-baby-reactjs]: https://github.com/spring-baby/spring-baby-reactjs
+[spring-baby-graphql]: https://github.com/spring-baby/spring-baby-graphql
+[spring-baby-kotlin]: https://github.com/spring-baby/spring-baby-kotlin
+[spring-baby-rest]: https://github.com/spring-baby/spring-baby-rest

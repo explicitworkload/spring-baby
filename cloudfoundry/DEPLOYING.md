@@ -6,7 +6,7 @@ When you are done developing your app, you can simply build and deploy it using:
 
 ```
 ./mvnw package  
-cf push spring-petclinic -p target/spring-petclinic-2.6.0-SNAPSHOT.jar -f config/manifest.yml --random-route
+cf push spring-baby -p target/spring-baby-2.6.0-SNAPSHOT.jar -f config/manifest.yml --random-route
 ```
 
 ## Accessing the app deployed app
@@ -14,7 +14,7 @@ cf push spring-petclinic -p target/spring-petclinic-2.6.0-SNAPSHOT.jar -f config
 Determine the URL to use for the accessing the app by running:
 
 ```
-cf app spring-petclinic
+cf app spring-baby
 ```
 
 To access the deployed app use the URL shown.
@@ -24,5 +24,5 @@ To access the deployed app use the URL shown.
 You can delete the running app using:
 
 ```
-cf delete spring-petclinic
+cf delete spring-baby
 ```

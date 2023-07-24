@@ -45,7 +45,7 @@ While Tilt is running, you can access the application at [http://localhost:8080]
 If Tilt is not running, then you need to find the `EXTERNAL-IP` for the Kubernetes service. Run this command:
 
 ```
-kubectl get service spring-petclinic
+kubectl get service spring-baby
 ```
 
 Now, you can access the PetCLinic app at `http://<EXTERNAL-IP>`.
